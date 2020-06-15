@@ -80,7 +80,7 @@ public class ExamInstructionsActivity extends BaseActivity {
                     checkboxSelected = true;
                     btnStartExam.setClickable(true);
                     btnStartExam.setEnabled(true);
-                    btnStartExam.setBackgroundResource(R.drawable.analysis_bg);
+                    btnStartExam.setBackgroundResource(R.drawable.navigation_bottom_bg);
 
                 }else {
                     checkboxSelected =false;

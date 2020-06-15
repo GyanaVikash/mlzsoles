@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/ten_dp"
         android:layout_gravity="center"
-        android:background="@drawable/submit_bg"
+        android:background="@drawable/navigation_bottom_bg"
         android:textColor="@color/white_color"
         android:paddingLeft="@dimen/ten_dp"
         android:paddingRight="@dimen/ten_dp"

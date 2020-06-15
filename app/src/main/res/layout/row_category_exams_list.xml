@@ -127,7 +127,7 @@
             android:id="@+id/tv_category_exams_list_take_exam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/analysis_bg_primary"
+            android:textColor="@color/blue_color"
             android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
             android:text="@string/take_exam"/>
@@ -137,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_alignParentRight="true"
-                android:tint="@color/analysis_bg_primary"
+                android:tint="@color/blue_color"
                 android:src="@drawable/chevron_right"/>
 
         </RelativeLayout>

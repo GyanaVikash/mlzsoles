@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:padding="@dimen/ten_dp"
-    android:background="@color/analysis_bg_primary"
+    android:background="@color/blue_color"
     android:id="@+id/ll_top"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -10,7 +10,7 @@
             android:id="@+id/img_app_icon"
             android:layout_width="@dimen/twenty_four_dp"
             android:layout_height="@dimen/twenty_four_dp"
-            android:src="@mipmap/ic_launcher"/>
+            />
 
         <TextView
             android:id="@+id/tv_take_exam_timer"

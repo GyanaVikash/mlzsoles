@@ -19,9 +19,9 @@ Disable setting to restrict the student to update the setting
             android:icon="@drawable/history"
             android:title="@string/str_nav_exam_history"/>
 
-        <item android:id="@+id/nav_feedback"
-            android:icon="@drawable/feedback"
-            android:title="@string/str_doubt"/>
+<!--        <item android:id="@+id/nav_feedback"-->
+<!--            android:icon="@drawable/feedback"-->
+<!--            android:title="@string/str_doubt"/>-->
 
         <item android:id="@+id/nav_bookmarks"
             android:icon="@drawable/bookmark"

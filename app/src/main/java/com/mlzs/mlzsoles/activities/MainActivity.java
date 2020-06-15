@@ -116,7 +116,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         imgLms = (CardView) findViewById(R.id.img_main_lms);
         imgAnalysis = (CardView) findViewById(R.id.img_main_analysis);
         imgNotifications = (CardView) findViewById(R.id.img_main_notifications);
-        imgDoubt = (CardView) findViewById(R.id.img_main_doubt);
+      //  imgDoubt = (CardView) findViewById(R.id.img_main_doubt);
         imgHistory = (CardView) findViewById(R.id.img_main_exam_history);
         imgLmsSeries = (CardView) findViewById(R.id.img_main_lms_series);
         imgExamsSeries = (CardView) findViewById(R.id.img_main_exams_series);
@@ -166,7 +166,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         imgLms.setOnClickListener(this);
         imgAnalysis.setOnClickListener(this);
         imgNotifications.setOnClickListener(this);
-        imgDoubt.setOnClickListener(this);
+    //    imgDoubt.setOnClickListener(this);
         imgHistory.setOnClickListener(this);
         imgExamsSeries.setOnClickListener(this);
         imgLmsSeries.setOnClickListener(this);
@@ -278,11 +278,11 @@ Disble setting
                 intent = new Intent(this, ExamsHistoryActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.nav_feedback:
-               // intent = new Intent(this, AddFeedBackActivity.class);
-                intent = new Intent(this, DoubtActivity.class);
-                startActivity(intent);
-                break;
+//            case R.id.nav_feedback:
+//               // intent = new Intent(this, AddFeedBackActivity.class);
+//                intent = new Intent(this, DoubtActivity.class);
+//                startActivity(intent);
+//                break;
             case R.id.nav_bookmarks:
                 intent = new Intent(this, BookmarksActivity.class);
                 startActivity(intent);
@@ -370,7 +370,7 @@ Disble setting
             i.setType("text/plain");
             i.putExtra(Intent.EXTRA_SUBJECT, "Menorah OES");
          //   String sAux = "\nLet me recommend you this application\n\n";
-            String sAux = "\nGyana Vikash Higher Secondary School Is Providing Video Lectures For +2 CHSE Students & NEET\n\n";
+            String sAux = "\nMount Litera Zee School Is Providing Video Lectures for Students \n\n";
             sAux = sAux + "https://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName();
             i.putExtra(Intent.EXTRA_TEXT, sAux);
             startActivity(Intent.createChooser(i, "Choose one"));
@@ -402,10 +402,10 @@ Disble setting
                 intent = new Intent(this, NotificationsActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.img_main_doubt:
-                intent = new Intent(this, DoubtActivity.class);
-                startActivity(intent);
-                break;
+//            case R.id.img_main_doubt:
+//                intent = new Intent(this, DoubtActivity.class);
+//                startActivity(intent);
+//                break;
 
             case R.id.img_main_exam_history:
                 intent = new Intent(this, ExamsHistoryActivity.class);
