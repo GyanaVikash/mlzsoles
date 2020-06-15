@@ -1,0 +1,279 @@
+<resources>
+    <string name="app_name">MLZS OLES</string>
+    <string name="fb_app_id">190816248246245</string>
+
+    <string name="app_title">Online Learning &amp; Examination System</string>//wait
+    <string name="vernsion">v </string>
+    <string name="app_oes">Online Learning &amp; Examination System</string>
+    <string name="app_about">THIS APP IS OFFICIALY MAINTAINED BY \n\n <b>MOUNT LITERA ZEE  SCHOOL , BERHAMPUR</b></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Menu Titles-->
+    <string name="str_nav_home">Home</string>
+    <string name="str_nav_settings">Settings</string>
+    <string name="str_nav_exam_history">Exam History</string>
+    <string name="str_feed_back">Feedback</string>
+    <string name="str_doubt">Ask Doubt</string>
+    <string name="str_bookmarks">Bookmarks</string>
+    <string name="str_nav_share_app">Share App</string>
+    <string name="str_subscription">Subscriptions</string>
+    <string name="str_nav_log_out">Logout</string>
+    <string name="str_study_material">Study Material</string>
+
+
+
+    <string-array name="analysis_type">
+
+        <item>By Exam</item>
+        <item>By Subject</item>
+
+    </string-array>
+
+    <string name="by_exam">By Exam</string>
+    <string name="by_subject">By Subject</string>
+
+
+    <!--Login screen-->
+    <string name="login">LOGIN</string>
+    <string name="login_with_user_name">Login with your email and password</string>
+    <string name="user_name">Username</string>
+    <string name="mobile">Mobile</string>
+    <string name="password">Password</string>
+    <string name="login_now">Login Now</string>
+    <string name="login_facebook">Facebook</string>
+    <string name="login_google">Sign with Google</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_nd_conditions">T&amp;C</string>
+    <string name="do_not_have_acc">Don\'t have account?</string>
+    <string name="tc">Terms &amp; Conditions</string>
+    <string name="forgot_pwd"><u>Forgot Password</u></string>
+    <string name="login_underline"><u>Login</u></string>
+    <string name="enter_register_email">Enter registered email id</string>
+
+    <!--Register screen-->
+
+    <string name="attempt_online_exms">Attempt thousands of online examinations.</string>
+    <string name="tracg_progress">Track Progress. Get personalised analysis</string>
+
+    <string name="create_ur_account">Register your Account</string>
+    <string name="register"><u>Register</u></string>
+
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password_confirm">Password Confirmation</string>>
+    <string name="already_have_acc">Already have account ?</string>
+    <string name="register_now">Register Now</string>
+
+    <!--Home screen-->
+    <string name="support">Support</string>
+    <string name="mail_id">help@gvhssb.in.net</string>
+
+    <!--Home screen-->
+
+    <string name="exams">Exams</string>
+    <string name="lms">Videos</string>
+    <string name="analysis">Analysis</string>
+    <string name="notifications">Notifications</string>
+    <string name="exam_series">Exam Series</string>
+    <string name="lms_series">Videos Series</string>
+
+    <string name="popular_exams">Popular Exams</string>
+    <string name="popular_lms">Popular Videos</string>
+
+    <string name="no_popular_exams">No Popular Exams</string>
+    <string name="no_popular_lms">No Popular Videos</string>
+
+    <string name="want_to_logout">Are you sure you want to logout?</string>
+
+    <!--Exams screen-->
+
+    <string name="take_exam">Take Exam</string>
+    <string name="duration">Duration</string>
+    <string name="total_question">Total Questions</string>
+
+    <string name="mark_for_review">MARK FOR REVIEW</string>
+
+    <!--FeedBack screen-->
+
+    <string name="title">Title</string>
+    <string name="subject">Subject</string>
+    <string name="description">Description</string>
+    <string name="send">Send</string>
+
+    <!--Settings screen-->
+
+    <string name="update_settings">Update Settings</string>
+    <string name="exam_cat">Exam Categories</string>
+    <string name="lms_cat">Videos Categories</string>
+
+
+    <string name="my_profile">My Profile</string>
+
+
+    <!--Exam Instructions screen-->
+    <string name="start_exam">Start Exam</string>
+    <string name="instructions">INSTUCTIONS</string>
+
+    <string name="enter_answer">enter answer</string>
+    <string name="btn_previous">Previous</string>
+    <string name="btn_next">Next</string>
+
+    <string name="change_pwd">Change Password</string>
+
+    <string name="role">Role</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="update_profile">Update Profile</string>
+
+    <string name="old_password">Enter old password</string>
+    <string name="new_password">Enter new password</string>
+    <string name="confirm_new_pwd">Confirm new password</string>
+    <string name="update_password">Update Password</string>
+
+
+    <string name="end_test">Submit Exam</string>
+    <string name="do_u_want_submit_test">Do you really want to submit the exam ?</string>
+
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="pay_u">PayU</string>
+    <string name="pay_pal">PayPal</string>
+    <string name="razor_pay">Razor Pay</string>
+    <string name="offline_pay">Offline Payment</string>
+
+
+    <string name="items">Items</string>
+    <string name="loading">loading…</string>
+
+    <string name="no_series">No series found</string>
+    <string name="no_exams_found">No exams found</string>
+    <string name="no_notifications">No notifications</string>
+    <string name="no_subscriptions">No subscriptions found</string>
+    <string name="no_categories_found">No categories found</string>
+    <string name="no_feed_back">No feedback</string>
+    <string name="no_book_marks">No bookmarks</string>
+    <string name="no_exam">No Exams History</string>
+    <string name="no_preference">No preference selected</string>
+
+
+    <string name="plz_check_network_connection">Please check your internet connection </string>
+    <string name="press_again_exit_app">Press again to exit</string>
+
+    <string name="exam_insturctions">I have read and understood the instructions given above</string>
+
+    <string name="offline_payment_h1">Offline Payment Instructions</string>
+    <string name="offline_pay_rule1">1) Pay the amount through DD/Check/Deposit in favor of Admin, Academia, India \n
+                                      2) Update the Payment information in the below box \n
+                                  3) Admin will validate the payment details and update your subscription </string>
+
+    <string name="payment_details">Payment Details</string>
+    <string name="payment_options">Payment Options</string>
+
+    <string name="checkout">CHECKOUT</string>
+
+    <string name="cost">Cost </string>
+    <string name="sub_total">Sub Total</string>
+    <string name="discount">Disscount</string>
+    <string name="apply">Apply</string>
+    <string name="order_total">Order Total</string>
+    <string name="pay">PAY</string>
+    <string name="have_a_promocode">have a promo code</string>
+
+    <string name="free">Free</string>
+    <string name="paid">Paid </string>
+    <string name="premium">Premium</string>
+
+    <string name="give_feed_back">Give Feed Back</string>
+    <string name="my_bookmarks">My Bookmarks</string>
+    <string name="exams_history">Exams History</string>
+    <string name="exam_key">Exam Key</string>
+    <string name="off_line_payment_form">Offline Payment Form</string>
+    <string name="result_for">Result for  </string>
+    <string name="subscription_list">Subscriptions List</string>
+    <string name="exam_instructions">EXAM INSTUCTIONS</string>
+    <string name="analysis_by_exam">Analysis By Exam</string>
+    <string name="analysis_by_subject">Analysis By Subject</string>
+    <string name="valid_for">Valid for </string>
+    <string name="days"> days</string>
+    <string name="marks">Marks</string>
+    <string name="percentage">Percentage</string>
+    <string name="result">Result</string>
+    <string name="total_marks">Total Score</string>
+
+    <string name="correct">Correct</string>
+    <string name="wrong">Wrong</string>
+    <string name="not_answered">Not Answered</string>
+
+    <string name="type">Type</string>
+    <string name="attempts">Attempts</string>
+
+    <string name="plz_select_checkbox">Please select above checkbox to start exam</string>
+
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="add_photo">Add Photo !</string>
+    <string name="logged_out_successfully">You\'ve been logged out successfully</string>
+
+    <string name="exceed_time_to_finish_exam">You are exceeded the time to finish exam</string>
+    <string name="back_press_disabled">Back press is disabled</string>
+
+    <string name="confirm_delete_this_qsn">Are you sure you want to delete this question?</string>
+    <string name="quizes">Quizzes</string>
+    <string name="questions">Questions</string>
+    <string name="pass">PASS</string>
+    <string name="fail">FAIL</string>
+
+    <string name="correct_ans"> Correct Ans : </string>
+    <string name="after_dis">Aftr Dis  </string>
+    <string name="transaction_date">Transaction Date  </string>
+
+    <string name="list_1">List I</string>
+    <string name="list_2">List II</string>
+
+    <string name="from">From</string>
+    <string name="to">to</string>
+    <string name="view">View More</string>
+    <string name="view_less">View Less</string>
+
+
+    <string name="plz_enter_title">Please enter title</string>
+    <string name="plz_add_subject">Please add subject</string>
+    <string name="plz_add_description">Please add description</string>
+
+    <string name="plz_enter_old_pwd">Please enter old password</string>
+    <string name="plz_enter_new_pwd">Please enter new password</string>
+    <string name="pwd_does_not_allow_spaces">Password doesn\'t allow spaces</string>
+    <string name="pwd_min_chars">Password Is Too Short,min length is 5</string>
+    <string name="plz_enter_confirm_pwd">Please enter confirm password</string>
+    <string name="both_pwds_doent_match">Both passwords doesn\'t match</string>
+
+    <string name="plz_enter_email">Please enter email</string>
+    <string name="plz_enter_pwd">Please enter password</string>
+
+    <string name="enter_payment_details">Enter payment details</string>
+
+    <string name="plz_enter_name">Please enter name</string>
+    <string name="plz_enter_user_name">Please enter user name</string>
+    <string name="invalid_email_pattern">Invalid email id</string>
+
+    <string name="view_key">View Key</string>
+
+    <string name="click_here_settings" translatable="false">Click here to change your preferences </string>
+
+    <string name="minutes">Mins</string>
+
+    <string name="view_chart">View Chart</string>
+
+    <string name="hide_chart">Hide Chart</string>
+
+    <string name="total_questios">Total Questions </string>
+
+    <string name="no_exams_attempted">No exams attempted</string>
+
+    <string name="validity">Validity</string>
+    <string name="developer">Developed by </string>
+    <string name="developer_name"><u>https://MadhabaPatra.github.io</u></string>
+</resources>

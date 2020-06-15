@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.mlzs.mlzsoles"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 11
+        versionName "1.0.11"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            multiDexKeepProguard file('multidex-config.pro')
+
+            /*ndk {
+                abiFilters "armeabi-v7a"
+            }*/
+        }
+        debug {
+            debuggable true
+            shrinkResources true
+            minifyEnabled true
+            jniDebuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            multiDexKeepProguard file('multidex-config.pro')
+
+            /* ndk {
+                abiFilters "armeabi-v7a"
+            }*/
+        }
+
+    }
+
+    repositories {
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets'] } }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    implementation 'com.facebook.android:facebook-android-sdk:4.6.0'
+    implementation 'com.google.android.gms:play-services-auth:11.8.0'
+    implementation 'com.google.code.gson:gson:2.2.4'
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+
+    implementation 'com.razorpay:checkout:1.4.8'
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.14.6'
+
+    implementation 'org.jsoup:jsoup:1.11.3'
+
+    implementation 'com.google.firebase:firebase-messaging:11.8.0'
+    implementation 'com.google.firebase:firebase-auth:11.8.0'
+    implementation 'com.google.firebase:firebase-crash:11.8.0'
+    implementation files('libs\\YouTubeAndroidPlayerApi.jar')
+
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.7.2'
+}
+
+apply plugin: 'com.google.gms.google-services'

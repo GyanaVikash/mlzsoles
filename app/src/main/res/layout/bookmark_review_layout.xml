@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="@dimen/three_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_take_exam_bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/grey_300"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:src="@drawable/star"/>
+
+        <ImageView
+            android:id="@+id/img_take_exam_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tint="@color/grey_color"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_toRightOf="@+id/img_take_exam_bookmark"
+            android:src="@drawable/hint"/>
+
+
+        <Spinner
+            android:id="@+id/spr_select_language"
+            android:layout_marginRight="@dimen/forty_dp"
+            android:layout_toRightOf="@id/img_take_exam_hint"
+            android:layout_centerInParent="true"
+            android:overlapAnchor="false"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/thirty_five_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_take_exam_mark_for_review"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/thirty_five_dp">
+
+            <ImageView
+                android:id="@+id/img_take_exam_mark_for_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:tint="@color/grey_300"
+                android:paddingRight="@dimen/three_dp"
+                android:paddingTop="@dimen/three_dp"
+                android:src="@drawable/mark_for_review"/>
+
+            <TextView
+                android:id="@+id/tv_take_exam_mark_for_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/grey_300"
+                android:text="@string/mark_for_review"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

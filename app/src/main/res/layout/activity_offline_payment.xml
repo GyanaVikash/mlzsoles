@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.OfflinePaymentActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/five_dp"
+        android:text="@string/offline_payment_h1"
+        android:textStyle="bold"
+        android:textSize="@dimen/eighteen_sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/five_dp"
+        android:textSize="@dimen/sixteen_sp"
+        android:text="@string/offline_pay_rule1"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/five_dp"
+        android:textStyle="bold"
+        android:text="@string/payment_details"/>
+
+
+    <EditText
+        android:id="@+id/ed_offline_pay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten_dp"
+        android:background="@drawable/take_exam_bg"
+        android:gravity="top"
+        android:lines="8"
+        android:layout_marginTop="@dimen/three_dp"
+        android:singleLine="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_offline_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fifteen_dp"
+            android:layout_marginRight="@dimen/fifteen_dp"
+            android:layout_marginBottom="@dimen/fifteen_dp"
+            android:background="@drawable/exams_series_bg"
+            android:textColor="@color/white_color"
+            android:layout_alignParentBottom="true"
+            android:text="@string/submit"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

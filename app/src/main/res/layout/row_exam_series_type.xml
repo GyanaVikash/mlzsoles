@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/five_dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/five_dp">
+
+    <LinearLayout
+        android:padding="@dimen/five_dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_exam_series_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exam Title"
+                android:textSize="@dimen/sixteen_sp"/>
+
+            <TextView
+                android:id="@+id/tv_exam_series_exam_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:paddingRight="@dimen/ten_dp"
+                android:textSize="@dimen/sixteen_sp"
+                android:text="Paid/Free"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/ten_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:text="@string/duration"/>
+
+        <TextView
+            android:id="@+id/tv_exam_series_duration"
+            android:layout_toRightOf="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/ten_dp" />
+
+        <TextView
+            android:layout_toLeftOf="@+id/tv_exam_series_total_qstns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/total_question"/>
+
+        <TextView
+            android:id="@+id/tv_exam_series_total_qstns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/ten_dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+        <View
+            android:layout_marginTop="@dimen/ten_dp"
+            android:background="@color/grey_300"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_exam_series_start"
+            android:padding="@dimen/five_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_category_exams_list_take_exam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="@string/take_exam"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:tint="@color/colorAccent"
+                android:src="@drawable/chevron_right"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

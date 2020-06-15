@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/str_nav_home"/>
+<!--
+Disable setting to restrict the student to update the setting
+
+        <item android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="@string/str_nav_settings"/>
+        -->
+        <item android:id="@+id/nav_examhistory"
+            android:icon="@drawable/history"
+            android:title="@string/str_nav_exam_history"/>
+
+        <item android:id="@+id/nav_feedback"
+            android:icon="@drawable/feedback"
+            android:title="@string/str_doubt"/>
+
+        <item android:id="@+id/nav_bookmarks"
+            android:icon="@drawable/bookmark"
+            android:title="@string/str_bookmarks"/>
+        <item android:id="@+id/nav_subscription"
+            android:icon="@drawable/subscriptions"
+            android:title="@string/str_subscription"/>
+        <item
+            android:id="@+id/nav_share_app"
+            android:icon="@drawable/share"
+            android:title="@string/str_nav_share_app" />
+        <item
+            android:id="@+id/nav_about_app"
+            android:icon="@drawable/hint"
+            android:title="About App" />
+
+        <item android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/str_nav_log_out"/>
+    </group>
+</menu>

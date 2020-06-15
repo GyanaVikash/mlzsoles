@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ExamInstructionsActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_above="@+id/checkboxE_exam_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_instructions_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/five_dp"
+            android:textSize="@dimen/sixteen_sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_instructions_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/five_dp"/>
+
+        </LinearLayout>
+        </ScrollView>
+
+        <CheckBox
+            android:id="@+id/checkboxE_exam_instructions"
+            android:layout_above="@+id/btn_start_exam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/forteen_sp"
+            android:layout_marginTop="@dimen/five_dp"
+            android:text="@string/exam_insturctions"/>
+        <Button
+            android:id="@+id/btn_start_exam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey_300"
+            android:clickable="false"
+            android:enabled="false"
+            android:textColor="@color/white_color"
+            android:layout_margin="@dimen/ten_dp"
+            android:text="@string/start_exam"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

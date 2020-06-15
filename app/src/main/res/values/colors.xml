@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#4C9BFA</color>   -->
+    <color name="colorPrimary">#4786FF</color>
+    <color name="colorPrimaryDark">#4786FF</color>
+    <color name="colorAccent">#4786FF</color>
+
+    <!--Logo Colors  -->
+    <color name="logoRed">#4786FF</color>
+    <color name="logoGreen">#4786FF</color>
+
+    <color name="white_color">#FFFFFF</color>
+    <color name="black_color">#000000</color>
+    <color name="light_black">#424242</color>
+
+    <color name="light_white_color">#C4AAF0</color>
+    <color name="google_color">#5271ff</color>
+    <color name="light_violet_color">#EFE5FF</color>
+    <color name="light_grey_color">#EEEEEE</color>
+
+    <color name="blue_color">#42A5F5</color>
+
+    <color name="green_500">#8BC34A</color>
+    <color name="indigo_500">#283593</color>
+    <color name="orange_300">#FF8A65</color>
+    <color name="purple_300">#997cFF</color>
+
+
+
+    <color name="exams_bg_primary">#FC8B33</color>
+    <color name="exams_bg">#FFC33B</color>
+
+    <color name="analysis_bg_primary">#dc1f26</color>
+    <color name="analysis_bg">#dc1f26</color>
+
+    <color name="lms_bg_primary">#FF6170</color>
+    <color name="lms_bg">#FF9943</color>
+
+    <color name="notifications_bg_primary">#5EA515</color>
+    <color name="notifications_bg">#8FCA13</color>
+
+    <color name="exams_series_bg_primary">#13AAF8</color>
+    <color name="exams_series_bg">#14E6CF</color>
+
+    <color name="lms_series_bg_primary">#F5667D</color>
+    <color name="lms_series_bg">#F099F6</color>
+
+    <color name="success_color">#00D664</color>
+    <color name="failure_color">#F44336</color>
+
+    <color name="subscription_color">#283593</color>
+    <color name="settings_color">#5E35B1</color>
+    <color name="bookmarks_color">#FF80AB</color>
+
+
+
+    <color name="grey_color">#9E9E9E</color>
+    
+    <color name="grey_300">#E0E0E0</color>
+
+    <color name="update_my_profile_primary">#5B81FF</color>
+    <color name="update_my_profile">#8D4FFF</color>
+
+
+
+    <color name="pay_u">#A5C339</color>
+
+
+
+</resources>

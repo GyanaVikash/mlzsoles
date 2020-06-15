@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ResultActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/seventy_dp"
+                        android:layout_height="@dimen/seventy_dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="@dimen/ten_dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/total_marks" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tv_result_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/twenty_five_sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/tv_total_marks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_marks"
+                            android:paddingLeft="@dimen/ten_dp"
+                            android:text="@string/total_marks"
+                            android:textSize="@dimen/eighteen_sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/ten_dp">
+
+
+                            <TextView
+                                android:id="@+id/tv_correct"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/correct"
+                                android:textSize="@dimen/sixteen_sp" />
+
+                            <ImageView
+                                android:id="@+id/img_correct"
+                                android:layout_width="@dimen/thirty_five_dp"
+                                android:layout_height="@dimen/thirty_five_dp"
+                                android:layout_below="@+id/tv_correct"
+                                android:src="@drawable/checkbox"
+                                android:tint="@color/green_500" />
+
+                            <TextView
+                                android:id="@+id/tv_result_correct"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_correct"
+                                android:layout_toRightOf="@+id/img_correct"
+                                android:gravity="center"
+                                android:padding="@dimen/five_dp"
+                                android:textSize="@dimen/eighteen_sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="@dimen/two_dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:layout_marginTop="@dimen/five_dp"
+                            android:background="@color/grey_color" />
+
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/ten_dp">
+
+
+                            <TextView
+                                android:id="@+id/tv_wrong"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/wrong"
+                                android:textSize="@dimen/sixteen_sp" />
+
+                            <ImageView
+                                android:id="@+id/img_wrong"
+                                android:layout_width="@dimen/thirty_five_dp"
+                                android:layout_height="@dimen/thirty_five_dp"
+                                android:layout_below="@+id/tv_wrong"
+                                android:src="@drawable/checkbox"
+                                android:tint="@color/google_color" />
+
+                            <TextView
+                                android:id="@+id/tv_result_wrong"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_wrong"
+                                android:layout_toRightOf="@+id/img_wrong"
+                                android:gravity="center"
+                                android:padding="@dimen/five_dp"
+                                android:textSize="@dimen/eighteen_sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="@dimen/two_dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:layout_marginTop="@dimen/five_dp"
+                            android:background="@color/grey_color" />
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.2"
+                            android:padding="@dimen/ten_dp">
+
+
+                            <TextView
+                                android:id="@+id/tv_not_ans"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/not_answered"
+                                android:textSize="@dimen/sixteen_sp" />
+
+                            <ImageView
+                                android:id="@+id/img_not_ans"
+                                android:layout_width="@dimen/thirty_five_dp"
+                                android:layout_height="@dimen/thirty_five_dp"
+                                android:layout_below="@+id/tv_not_ans"
+                                android:src="@drawable/checkbox"
+                                android:tint="@color/grey_color" />
+
+                            <TextView
+                                android:id="@+id/tv_result_notans"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_not_ans"
+                                android:layout_toRightOf="@+id/img_not_ans"
+                                android:gravity="center"
+                                android:padding="@dimen/five_dp"
+                                android:textSize="@dimen/eighteen_sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_result_total_questions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/ten_dp"
+                        android:paddingLeft="@dimen/ten_dp"
+                        android:textSize="@dimen/eighteen_sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/ten_dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/ten_dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="@dimen/sixty_dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/percentage" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_result_percentage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:paddingLeft="@dimen/ten_dp"
+                                android:textSize="@dimen/twenty_sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_percentage"
+                                android:layout_marginTop="@dimen/five_dp"
+                                android:text="@string/percentage"
+                                android:textSize="@dimen/eighteen_sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/pb_result"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/eight_dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/ten_dp"
+                        android:layout_marginRight="@dimen/ten_dp"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:layout_weight="5"
+                        android:progressDrawable="@drawable/custom_progressbar_horizontal" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten_dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/ten_dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:padding="@dimen/ten_dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/result"
+                            android:textSize="@dimen/eighteen_sp" />
+
+                        <TextView
+                            android:id="@+id/tv_result"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/sixteen_sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:padding="@dimen/ten_dp">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_percentage"
+                            android:text="@string/duration"
+                            android:textSize="@dimen/eighteen_sp" />
+
+                        <TextView
+                            android:id="@+id/tv_result_duration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/ten_dp"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/sixteen_sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

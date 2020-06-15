@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mlzs.mlzsoles.view.MathJaxWebView
+        android:id="@+id/tv_key_paragraph_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ten_dp"
+        android:textSize="@dimen/sixteen_sp"
+        android:gravity="center" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_key_paraghraph"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

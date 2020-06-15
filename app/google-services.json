@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "466009119568",
+    "firebase_url": "https://mlzs-oles.firebaseio.com",
+    "project_id": "mlzs-oles",
+    "storage_bucket": "mlzs-oles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466009119568:android:111bd02358bb7a4ec5aa55",
+        "android_client_info": {
+          "package_name": "com.mlzs.mlzsoles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466009119568-mqb01i68rjjh9rtu3kejr4hu9qc67aal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKc70uELA9AjtWyYzRFLzZRTy2KmDb-DQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466009119568-mqb01i68rjjh9rtu3kejr4hu9qc67aal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

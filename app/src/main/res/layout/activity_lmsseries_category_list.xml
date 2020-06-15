@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LMSSeriesCategoryListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_video_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two_fifty_dp">
+
+            <VideoView
+                android:id="@+id/vv_lms_series"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_type_audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/twenty_dp"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/img_audio_play_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:tint="@color/colorPrimary"
+                android:padding="@dimen/five_dp"
+                android:src="@drawable/pause"/>
+
+            <SeekBar
+                android:id="@+id/SeekBarTestPlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignParentLeft="true" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_lms_series_category_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:id="@+id/tv_no_lms_series_category_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/eighteen_sp"
+                android:visibility="gone"
+                android:text="@string/no_series"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

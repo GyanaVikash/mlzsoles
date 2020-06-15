@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/five_dp"
+    app:cardCornerRadius="@dimen/five_dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/img_exams_series"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hundred_dp"
+            android:scaleType="fitXY"
+            android:layout_weight="1.5"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+
+
+            <TextView
+            android:id="@+id/tv_exams_series_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sixteen_sp"
+            android:textStyle="bold"
+            android:padding="@dimen/five_dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+            android:text="@string/title"/>
+
+            <TextView
+            android:id="@+id/tv_exams_series_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/five_dp"
+            android:textSize="@dimen/sixteen_sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:text="@string/free"/>
+
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_dp"
+            android:layout_marginTop="@dimen/five_dp"
+            android:background="@color/grey_300"/>
+
+            <RelativeLayout
+            android:id="@+id/rl_exams_series_next"
+            android:layout_marginTop="@dimen/five_dp"
+            android:paddingLeft="@dimen/five_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+            android:id="@+id/tv_exams_series_total_quizes"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+            android:id="@+id/tv_exams_series_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/five_dp"
+            android:padding="@dimen/three_dp"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

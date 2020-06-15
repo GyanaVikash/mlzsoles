@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/ten_dp"
+    android:background="@color/analysis_bg_primary"
+    android:id="@+id/ll_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_app_icon"
+            android:layout_width="@dimen/twenty_four_dp"
+            android:layout_height="@dimen/twenty_four_dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_take_exam_timer"
+            android:layout_toRightOf="@+id/img_app_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/ten_dp"
+            android:textSize="@dimen/fifteen_sp"
+            android:layout_marginRight="@dimen/five_dp"
+            android:textStyle="bold"
+            android:textColor="@color/white_color"
+            android:layout_gravity="end"/>
+
+
+        <TextView
+            android:id="@+id/tv_take_exam_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/fifteen_sp"
+            android:textColor="@color/white_color"/>
+
+
+</RelativeLayout>

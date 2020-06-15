@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CheckOutActivity">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <RelativeLayout
+        android:padding="@dimen/five_dp"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_checkout_sub_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fifteen_sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/ten_dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/tv_checkout_validity" />
+
+        <TextView
+            android:id="@+id/tv_checkout_validity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fifteen_sp"
+            android:textStyle="bold"
+            android:paddingRight="@dimen/fifteen_dp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cost"
+            android:paddingLeft="@dimen/ten_dp"
+            android:textSize="@dimen/fifteen_sp"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/tv_checkout_currency_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fifteen_sp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tv_checkout_cost"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingLeft="@dimen/five_dp"
+            android:textSize="@dimen/fifteen_sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_checkout_promo_code"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_marginLeft="@dimen/ten_dp"
+        android:layout_marginRight="@dimen/ten_dp"
+        android:background="@drawable/take_exam_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ed_checkout_promocode"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:hint="@string/have_a_promocode"
+            android:padding="@dimen/five_dp"
+            android:paddingLeft="@dimen/two_dp"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/fifteen_sp"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/tv_checkout_apply"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:text="@string/apply"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/analysis_bg"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/fifteen_sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_total"
+            android:paddingLeft="@dimen/ten_dp"
+            android:textSize="@dimen/fifteen_sp"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/tv_checkout_currency_subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fifteen_sp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tv_checkout_sub_total"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingLeft="@dimen/five_dp"
+            android:textSize="@dimen/fifteen_sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:text="@string/discount"
+            android:paddingLeft="@dimen/ten_dp"
+            android:textSize="@dimen/fifteen_sp"
+            android:layout_weight="2"/>
+        <TextView
+            android:id="@+id/tv_checkout_currency_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fifteen_sp"
+            android:text=""/>
+        <TextView
+            android:id="@+id/tv_checkout_discount"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingLeft="@dimen/five_dp"
+            android:textSize="@dimen/fifteen_sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:text="@string/order_total"
+            android:paddingLeft="@dimen/ten_dp"
+            android:textSize="@dimen/fifteen_sp"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/tv_checkout_currency_order_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fifteen_sp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tv_checkout_final_total"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingLeft="@dimen/five_dp"
+            android:textSize="@dimen/fifteen_sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+   </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_checkout_pay"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/ten_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/analysis_bg"
+        android:textColor="@color/white_color"
+        android:text="@string/pay"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.mlzs.mlzsoles.view.MathJaxWebView
+                android:id="@+id/tv_key_video_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/ten_dp"
+                android:textSize="@dimen/sixteen_sp" />
+
+            <RelativeLayout
+                android:id="@+id/ll_type_video"
+                android:layout_marginTop="@dimen/three_dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/two_hundred_dp">
+
+                <VideoView
+                    android:id="@+id/vv_key_video_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_key_video_play"
+                        android:layout_width="@dimen/thirty_five_dp"
+                        android:layout_height="@dimen/thirty_five_dp"
+                        android:tint="@color/analysis_bg_primary"
+                        android:src="@drawable/play"/>
+
+                    <SeekBar
+                        android:id="@+id/seekbar_video_key"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/analysis_bg_primary"
+                        android:progressBackgroundTint="@color/white_color"
+                        android:layout_alignParentLeft="true" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_key_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

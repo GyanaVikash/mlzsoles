@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AnalysisActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tv_analysis_view_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/eighteen_sp"
+        android:layout_gravity="right"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="@dimen/ten_dp"
+        android:text="@string/view_chart"/>
+
+    <TextView
+        android:id="@+id/tv_no_analysis"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="@dimen/eighteen_sp"
+        android:text="@string/no_exams_attempted"/>
+
+    <LinearLayout
+        android:id="@+id/ll_subjects"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirty_five_dp"
+        android:layout_marginLeft="@dimen/ten_dp"
+        android:layout_marginRight="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/fifteen_dp"
+        android:background="@drawable/take_exam_bg"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/spr_analysis_subjects"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/five_dp" />
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_weight="2"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/fifteen_dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_weight="2"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_analysis_titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:paddingLeft="@dimen/fifteen_dp"
+                android:text="@string/title"
+                android:gravity="left"
+                android:textSize="@dimen/thirteen_sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/type"
+                android:paddingRight="@dimen/ten_dp"
+                android:textSize="@dimen/thirteen_sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/duration"
+                android:textSize="@dimen/thirteen_sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/marks"
+                android:textSize="@dimen/thirteen_sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="@dimen/zero_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/attempts"
+                android:textSize="@dimen/thirteen_sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_analysis_by_exam"
+            android:layout_marginTop="@dimen/five_dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

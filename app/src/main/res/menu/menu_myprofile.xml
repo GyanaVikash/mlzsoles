@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/change_pwd"
+        android:iconTint="@color/white_color"
+        android:title="@string/change_pwd"/>
+
+    <item android:id="@+id/logout"
+        android:iconTint="@color/white_color"
+        android:title="@string/str_nav_log_out"/>
+
+</menu>

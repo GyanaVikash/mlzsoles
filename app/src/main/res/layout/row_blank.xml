@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_blanck_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fifteen_sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/ten_dp"
+        android:textStyle="bold"
+        android:textColor="@color/white_color"
+        android:background="@drawable/circular_bg"
+        android:padding="@dimen/five_dp"/>
+
+    <EditText
+        android:id="@+id/ed_row_blank_ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fifteen_sp"
+        android:hint="@string/enter_answer"
+        android:layout_margin="@dimen/eight_dp"
+        android:background="@drawable/take_exam_bg"
+        android:padding="@dimen/ten_dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_row_blank_correct_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:textSize="@dimen/sixteen_sp"
+        android:paddingLeft="@dimen/ten_dp"
+        android:visibility="gone"
+        android:text="@string/correct_ans"/>
+
+</LinearLayout>

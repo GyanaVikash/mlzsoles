@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/one_fifty_dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/five_dp"
+    app:cardCornerRadius="@dimen/five_dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_exam_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_exam_category_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Title"
+            android:padding="@dimen/five_dp"
+            android:background="#AA000000"
+            android:textColor="@color/white_color"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

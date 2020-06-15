@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_payment_options"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_payment_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:animateLayoutChanges="true"
+        android:padding="@dimen/five_dp"
+        android:elevation="@dimen/ten_dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sixteen_sp"
+                android:layout_margin="@dimen/ten_dp"
+                android:textColor="@color/grey_color"
+                android:text="@string/payment_options"/>
+
+            <LinearLayout
+                android:id="@+id/ll_pay_pal"
+                android:layout_margin="@dimen/ten_dp"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_paypal"
+                    android:layout_width="@dimen/forty_dp"
+                    android:layout_height="@dimen/forty_dp"
+                    android:layout_margin="@dimen/two_dp"
+                    android:src="@drawable/paypal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:text="@string/pay_pal"
+                    android:textColor="@color/light_black"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pay_u"
+                android:layout_margin="@dimen/ten_dp"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/img_payu"
+                    android:layout_width="@dimen/forty_dp"
+                    android:layout_height="@dimen/forty_dp"
+                    android:layout_margin="@dimen/two_dp"
+                    android:src="@drawable/payu"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:text="@string/pay_u"
+                    android:textColor="@color/light_black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_razor_pay"
+                android:layout_margin="@dimen/ten_dp"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_stripe"
+                    android:layout_width="@dimen/forty_dp"
+                    android:layout_height="@dimen/forty_dp"
+                    android:layout_margin="@dimen/two_dp"
+                    android:src="@drawable/razorpay"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:text="@string/razor_pay"
+                    android:textColor="@color/light_black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_offline_pay"
+                android:layout_margin="@dimen/ten_dp"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/forty_dp"
+                    android:layout_height="@dimen/forty_dp"
+                    android:layout_margin="@dimen/two_dp"
+                    android:src="@drawable/offline_pay"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/ten_dp"
+                    android:text="@string/offline_pay"
+                    android:textColor="@color/light_black"/>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one_dp"
+                android:layout_marginTop="@dimen/five_dp"
+                android:layout_marginBottom="@dimen/five_dp"
+                android:background="@color/light_grey_color"/>
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten_dp"
+                android:textSize="@dimen/eighteen_sp"
+                android:textStyle="bold"
+                android:textColor="@color/light_black"
+                android:padding="@dimen/five_dp"
+                android:paddingLeft="@dimen/five_dp"
+                android:text="@string/cancel"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

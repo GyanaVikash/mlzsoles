@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/five_dp"
+    app:cardCornerRadius="@dimen/five_dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/ten_dp">
+
+
+        <ImageView
+            android:id="@+id/img_lms"
+            android:layout_width="@dimen/sixty_dp"
+            android:layout_height="@dimen/sixty_dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_lms_series_category_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/img_lms"
+            android:padding="@dimen/five_dp"
+            android:text="Name"
+            android:textSize="@dimen/eighteen_sp" />
+
+        <TextView
+            android:id="@+id/tv_lms_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/five_dp"
+            android:text="Paid"
+            android:textSize="@dimen/sixteen_sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

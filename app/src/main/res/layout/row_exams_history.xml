@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/five_dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/five_dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_row_exams"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_row_exams_history_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/tv_row_exams_history_view_key"
+                android:padding="@dimen/five_dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/sixteen_sp"/>
+
+            <TextView
+                android:id="@+id/tv_row_exams_history_view_key"
+                android:layout_width="@dimen/hundred_dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/five_dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="@dimen/five_dp"
+                android:text="@string/view_key"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_row_exams_history_marks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/five_dp"
+            android:gravity="center" />
+
+
+            <TextView
+                android:id="@+id/tv_row_exams_history_result"
+                android:layout_width="@dimen/hundred_dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/five_dp"
+                android:textColor="@color/white_color"
+                android:layout_margin="@dimen/five_dp"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
